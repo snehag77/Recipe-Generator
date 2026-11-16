@@ -1,0 +1,47 @@
+# ==============================================================================
+# RecipeGen AI — Docker Build Exclusions (.dockerignore)
+# ==============================================================================
+
+# Version Control & Environments
+.git/
+.gitignore
+.venv/
+venv/
+venv_tf/
+
+# Bytecode, Compiler & OS Caches
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Local Backups & Scratch Files
+*.bak
+*.phase*.bak
+*.stage*.bak
+*.ui.bak
+*.tmp*
+.pytest_cache/
+
+# Raw Large Datasets (Exclude 2.29 GB raw CSV and scraping notebooks)
+data/archive 2/
+data/raw_dataset.csv
+*.csv
+
+# Redundant Checkpoints & Rollback Weights (Keep image under 3 GB)
+# Stage 2F is included via Dockerfile; exclude duplicate and rollback weights:
+models/recipe_gpt2/
+models/gpt2_finetuned.weights.h5
+models/*.zip
+
+# User & Host-specific Local Caches
+.cache/
+.keras/
+kagglehub/
+data/cache/
+
+# Documentation reports (Not needed inside container runtime)
+*.md

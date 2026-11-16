@@ -1,0 +1,40 @@
+{
+  "config": {
+    "base_model": "gpt2_base_en",
+    "epochs": 1,
+    "batch_size": 4,
+    "max_len": 256,
+    "initial_learning_rate": 5e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "lr_schedule": "CosineDecayWithWarmup",
+    "warmup_steps": 2,
+    "random_seed": 42,
+    "train_samples": 200,
+    "val_samples": 250,
+    "checkpoint_path": "models/recipe_gpt2/recipe_gpt2_best.weights.h5"
+  },
+  "training_duration_seconds": 182.7,
+  "best_val_loss": 1.5247,
+  "perplexity": 4.59,
+  "history": {
+    "accuracy": [
+      0.5415624976158142
+    ],
+    "loss": [
+      1.814274787902832
+    ],
+    "sparse_categorical_accuracy": [
+      0.6025075316429138
+    ],
+    "val_accuracy": [
+      0.583734393119812
+    ],
+    "val_loss": [
+      1.5247474908828735
+    ],
+    "val_sparse_categorical_accuracy": [
+      0.6535750031471252
+    ]
+  }
+}

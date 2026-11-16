@@ -1,0 +1,99 @@
+{
+  "num_test_sentences": 500,
+  "eval_duration_seconds": 12.179168939590454,
+  "token_accuracy": 96.1621123733497,
+  "bert_seqeval": {
+    "precision": 88.99803536345776,
+    "recall": 88.30409356725146,
+    "f1": 88.64970645792563
+  },
+  "bert_entity_metrics": {
+    "precision": 88.9763779527559,
+    "recall": 88.8015717092338,
+    "f1": 88.8888888888889,
+    "tp": 452,
+    "fp": 56,
+    "fn": 57
+  },
+  "rule_entity_metrics": {
+    "precision": 1.4754098360655739,
+    "recall": 1.768172888015717,
+    "f1": 1.6085790884718498,
+    "tp": 9,
+    "fp": 601,
+    "fn": 500
+  },
+  "comparison_examples": [
+    {
+      "index": 3,
+      "recipe_id": "rec_003274",
+      "input_text": "1/4 tsp. Salt",
+      "expected_entities": [
+        "salt"
+      ],
+      "bert_predictions": [
+        "salt"
+      ],
+      "rule_predictions": [
+        "1/4 tsp. Salt"
+      ]
+    },
+    {
+      "index": 12,
+      "recipe_id": "rec_004533",
+      "input_text": "3 c. figs",
+      "expected_entities": [
+        "figs"
+      ],
+      "bert_predictions": [
+        "figs"
+      ],
+      "rule_predictions": [
+        "3 c. figs"
+      ]
+    },
+    {
+      "index": 27,
+      "recipe_id": "rec_000610",
+      "input_text": "1 tablespoon sesame oil",
+      "expected_entities": [
+        "sesame oil"
+      ],
+      "bert_predictions": [
+        "sesame oil"
+      ],
+      "rule_predictions": [
+        "1 tablespoon sesame oil"
+      ]
+    },
+    {
+      "index": 45,
+      "recipe_id": "rec_004413",
+      "input_text": "2 cups milk or 2 cups reconstituted non-fat powdered milk",
+      "expected_entities": [
+        "milk"
+      ],
+      "bert_predictions": [
+        "milk"
+      ],
+      "rule_predictions": [
+        "2 cups milk or 2 cups reconstituted non-fat powdered milk"
+      ]
+    },
+    {
+      "index": 68,
+      "recipe_id": "rec_001907",
+      "input_text": "1/2 c. sweet cream butter",
+      "expected_entities": [
+        "sweet cream butter"
+      ],
+      "bert_predictions": [
+        "sweet cream butter"
+      ],
+      "rule_predictions": [
+        "1/2 c. sweet cream butter"
+      ]
+    }
+  ],
+  "timestamp": "2026-11-17 01:08:18"
+}

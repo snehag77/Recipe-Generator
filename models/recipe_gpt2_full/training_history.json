@@ -1,0 +1,56 @@
+{
+  "config": {
+    "base_model": "gpt2_base_en",
+    "epochs": 1,
+    "batch_size": 4,
+    "max_len": 512,
+    "initial_learning_rate": 5e-05,
+    "optimizer": "AdamW",
+    "weight_decay": 0.01,
+    "lr_schedule": "CosineDecayWithWarmup",
+    "warmup_steps": 56,
+    "warmup_percentage": 0.05,
+    "decay_alpha": 0.1,
+    "random_seed": 42,
+    "train_samples": 4500,
+    "train_batches": 1125,
+    "val_samples": 250,
+    "val_batches": 62,
+    "checkpoint_path": "models/recipe_gpt2_full/recipe_gpt2_full_best.weights.h5",
+    "compute_device": "Apple Silicon CPU (TensorFlow 2.21)"
+  },
+  "execution": {
+    "training_duration_seconds": 9858.92,
+    "training_duration_minutes": 164.32,
+    "peak_rss_gb": 6.957,
+    "steps_per_second": 0.114,
+    "samples_per_second": 0.46
+  },
+  "metrics": {
+    "final_train_loss": 0.9863,
+    "final_train_accuracy": 0.3688,
+    "final_val_loss": 0.9038,
+    "final_val_accuracy": 0.3866,
+    "validation_perplexity": 2.47
+  },
+  "history": {
+    "accuracy": [
+      0.36878037452697754
+    ],
+    "loss": [
+      0.9862539172172546
+    ],
+    "sparse_categorical_accuracy": [
+      0.6394323110580444
+    ],
+    "val_accuracy": [
+      0.3865624964237213
+    ],
+    "val_loss": [
+      0.903770387172699
+    ],
+    "val_sparse_categorical_accuracy": [
+      0.6651610732078552
+    ]
+  }
+}

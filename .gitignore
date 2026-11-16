@@ -1,0 +1,51 @@
+# ==============================================================================
+# RecipeGen AI — .gitignore Configuration
+# ==============================================================================
+
+# Python environments
+.venv/
+.venv-ml/
+venv/
+venv_tf/
+venv_pt/
+
+# Bytecode, cache & OS metadata
+__pycache__/
+*.py[cod]
+*$py.class
+.DS_Store
+Thumbs.db
+
+# Large Model Checkpoints (>100 MB rejected by standard GitHub git push)
+# Weights should be handled via Git LFS or scripts/download_model.py
+*.weights.h5
+*.h5
+*.keras
+*.safetensors
+*.bin
+*.pt
+*.pth
+models/*.weights.h5
+models/*/*.weights.h5
+models/**/*.weights.h5
+models/**/*.safetensors
+models/**/*.bin
+models/**/*.pt
+
+# Local model cache & temporary directories
+.cache/
+.keras/
+kagglehub/
+data/cache/
+/tmp/
+*.tmp
+*.bak
+
+# Large raw datasets (2.29 GB RecipeNLG raw CSV excluded from repo)
+data/archive 2/
+data/raw_dataset.csv
+*.csv
+
+# Preserve lightweight model configuration & metric history in repository
+!models/**/training_config.json
+!models/**/training_history.json

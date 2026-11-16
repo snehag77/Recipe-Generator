@@ -1,0 +1,20 @@
+{
+  "base_model": "gpt2_base_en",
+  "epochs": 1,
+  "batch_size": 4,
+  "max_len": 512,
+  "initial_learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "lr_schedule": "CosineDecayWithWarmup",
+  "warmup_steps": 56,
+  "warmup_percentage": 0.05,
+  "decay_alpha": 0.1,
+  "random_seed": 42,
+  "train_samples": 4500,
+  "train_batches": 1125,
+  "val_samples": 250,
+  "val_batches": 62,
+  "checkpoint_path": "models/recipe_gpt2_full/recipe_gpt2_full_best.weights.h5",
+  "compute_device": "Apple Silicon CPU (TensorFlow 2.21)"
+}

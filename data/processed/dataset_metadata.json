@@ -1,0 +1,26 @@
+{
+  "dataset_name": "RecipeNLG Processed Pilot (Reservoir Sample)",
+  "source_dataset": "RecipeNLG_dataset.csv",
+  "sampling_method": "Reservoir Sampling (Algorithm R)",
+  "random_seed": 42,
+  "format": "GPT-2 Causal LM Delimited Recipe Format",
+  "license_notice": "For non-commercial research and educational use only in accordance with RecipeNLG terms.",
+  "splits": {
+    "train": {
+      "file": "recipes_train.jsonl",
+      "count": 4500,
+      "percentage": "90%"
+    },
+    "validation": {
+      "file": "recipes_validation.jsonl",
+      "count": 250,
+      "percentage": "5%"
+    },
+    "test": {
+      "file": "recipes_test.jsonl",
+      "count": 250,
+      "percentage": "5%"
+    }
+  },
+  "statistics_file": "dataset_statistics.json"
+}

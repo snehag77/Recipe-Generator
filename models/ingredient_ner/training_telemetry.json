@@ -1,0 +1,37 @@
+{
+  "model_name": "google-bert/bert-base-cased",
+  "epochs_trained": 3,
+  "total_duration_seconds": 1287.9834649562836,
+  "best_val_f1": 0.8549323017408125,
+  "device": "mps",
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.24699527578391994,
+      "val_loss": 0.13968867543735541,
+      "val_precision": 0.8284600389863548,
+      "val_recall": 0.8333333333333334,
+      "val_f1": 0.8308895405669598,
+      "duration_seconds": 387.116651058197
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.10335329831635735,
+      "val_loss": 0.1259535685821902,
+      "val_precision": 0.8460038986354775,
+      "val_recall": 0.8509803921568627,
+      "val_f1": 0.8484848484848485,
+      "duration_seconds": 451.3766782283783
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.07073631645660007,
+      "val_loss": 0.13762744474661304,
+      "val_precision": 0.8435114503816794,
+      "val_recall": 0.8666666666666667,
+      "val_f1": 0.8549323017408125,
+      "duration_seconds": 448.89496302604675
+    }
+  ],
+  "timestamp": "2026-11-17 01:07:49"
+}

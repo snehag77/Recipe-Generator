@@ -1,0 +1,19 @@
+{
+  "total_rows_read": 2231142,
+  "valid_candidate_count": 2079931,
+  "duplicates_removed": 148876,
+  "discarded_reasons": {
+    "directions_too_short": 679,
+    "excessively_long_directions": 1654,
+    "missing_or_short_title": 2
+  },
+  "target_sample_size": 5000,
+  "final_retained_count": 5000,
+  "train_count": 4500,
+  "val_count": 250,
+  "test_count": 250,
+  "avg_character_length": 988.8,
+  "avg_approx_tokens": 259.8,
+  "max_approx_tokens": 1326,
+  "min_approx_tokens": 42
+}

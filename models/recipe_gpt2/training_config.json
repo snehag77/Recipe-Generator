@@ -1,0 +1,15 @@
+{
+  "base_model": "gpt2_base_en",
+  "epochs": 1,
+  "batch_size": 4,
+  "max_len": 256,
+  "initial_learning_rate": 5e-05,
+  "optimizer": "AdamW",
+  "weight_decay": 0.01,
+  "lr_schedule": "CosineDecayWithWarmup",
+  "warmup_steps": 2,
+  "random_seed": 42,
+  "train_samples": 200,
+  "val_samples": 250,
+  "checkpoint_path": "models/recipe_gpt2/recipe_gpt2_best.weights.h5"
+}
